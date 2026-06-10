@@ -1,45 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout com Flexbox</title>
-    <link rel="stylesheet" href="layout.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2300e9;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgb(13, 219, 226);
+        }
+
+        footer {
+            background-color: #286ceb;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <nav class="menu-navegacao">
-            <a href="#">Início</a>
-            <a href="#">Produtos</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
+        <nav>
+            <a href="https://pt.wikipedia.org/wiki/Especial:Aleat%C3%B3ria" target="_blank">Wikipedia pt br</a>
+           <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Wikipedia en</a>
+            <a href="https://i0.wp.com/www.gibizilla.com.br/wp-content/uploads/2023/01/This_Is_Fine_01.jpg?fit=600,400&ssl=1" target="_blank">Estado mental.jpeg</a>
+            <a href="https://www.instagram.com/davilopesomena/" target="_blank">Me segue aí!</a>
         </nav>
     </header>
 
-    <main class="conteudo-principal">
-        
-        <article class="card">
-            <h3>Serviço 1</h3>
-            <p>Descrição do primeiro serviço oferecido.</p>
-        </article>
+    <main>
+        <div class="card">
+            <h2>Link Central do Aluno</h2>
+            <p><a href="https://aluno.uninove.br/seu/CENTRAL/aluno/" target="_blank">Acesse a Central do Aluno</a></p>
+        </div>
 
-        <article class="card">
-            <h3>Serviço 2</h3>
-            <p>Descrição do segundo serviço oferecido.</p>
-        </article>
+        <div class="card">
+            <h2>Link Google</h2>
+            <p><a href="https://www.google.com" target="_blank">Acesse o Google</a></p>
+        </div>
 
-        <article class="card">
-            <h3>Serviço 3</h3>
-            <p>Descrição do terceiro serviço oferecido.</p>
-        </article>
-
+        <div class="card">
+            <h2>Link Youtube</h2>
+            <p><a href="https://www.youtube.com" target="_blank">Acesse o YouTube</a></p>
+        </div>
     </main>
 
     <footer>
-        
-        <p>&copy; 2026 - Bruno Otavio</p>
+        <p>Meu Site de Links</p>
     </footer>
-
 </body>
 </html>
